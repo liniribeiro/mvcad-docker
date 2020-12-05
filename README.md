@@ -10,6 +10,11 @@ Exemplo:
 docker build -t mvcad .
 ~~~
 
+- "-t" é um parâmetro para informar que a imagem pertence ao meu usuário
+- "." Significa o diretório em que você está, pois executamos o comando docker build dentro da pasta onde o Dockerfile se encontra.
+
+
+
 #### Baixar imagem
 ~~~ 
 docker pull <nome da imagem>
@@ -26,7 +31,7 @@ docker run <nome da imagem> -p porta_container:porta_seu_pc
 ~~~
 Exemplo: 
 ~~~
-docker run --name mvcad -p 5000:5000  mvcad
+docker run --name mvcad -p 5000:5000  aliniribeiroo/mvcad
 ~~~
 Significado: Roda na porta 5000, um container com o nome mvcad e imagem é o mvcad
 

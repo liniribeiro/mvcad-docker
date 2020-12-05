@@ -18,4 +18,4 @@ api.add_resource(HelloWorld, '/')
 if __name__ == '__main__':
     print(">>>>>>>>> Estamos muito feliz que você chegou até aqui! Continue estudando que você vai longe <3 <<<<<<<<<")
     print(">>>>>>>>> Execute um get, para chamar a api disponível neste projeto, a porta é a 5000 <<<<<<<<<")
-    app.run(debug=True)
+    app.run(port='5000', host='0.0.0.0', debug=True)

@@ -1,7 +1,10 @@
-# Imagem base que o docker file vai extender, ou seja, ele vai pegar uma imagem já existente do python e irá "complementar" ela com os nossos comandos
+# Imagem base que o docker file vai extender, ou seja, ele vai
+# pegar uma imagem já existente do python e irá "complementar"
+# ela com os nossos comandos
 FROM python:3.8
 
-# Fala qual o diretório do container que iremos trabalhar, não é uma boa pratica utilizar na pasta root.
+# Fala qual o diretório do container que iremos trabalhar,
+#não é uma boa pratica utilizar na pasta root.
 WORKDIR /code
 
 # Copia  os arquivos que iremos utilizar para iniciar nosso projeto
